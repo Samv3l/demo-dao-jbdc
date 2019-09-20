@@ -32,13 +32,16 @@ public class Program {
 		}
 			
 		System.out.println("----- Teste Seller Insert------");
-		sellerDao.insert(seller);
+		//sellerDao.insert(seller);
 		
 		System.out.println("----- Teste Seller Update------");
 		seller = sellerDao.findById(1);
-		seller.setName("olga");
-		sellerDao.update(seller);
+		//seller.setName("olga");
+		//sellerDao.update(seller);
 		System.out.println(seller);
+		
+		System.out.println("----- Teste Seller Delete------");
+		sellerDao.deleteById(1);
 		
 	}
 
